@@ -13,7 +13,7 @@ body {
 
 /* Sidebar */
 .sidebar {
-  height: auto;
+  height: 100vh;
   width: 260px;
   background: #18181b;
   transition: width 0.3s;
@@ -86,10 +86,13 @@ body {
 }
 
 .avatar {
-  width: 32px;
-  height: 32px;
-  background: #3f3f46;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
+  background-image: url(/adminPanel_1.0/images/baseUser.png);
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #333;
 }
 
 /* Toggle button style */
@@ -100,17 +103,15 @@ body {
   border-radius: 6px;
 }
 
-.products {
+.plans {
   display: flex;
   justify-content: center;
   height: 100%;
- 
+  padding: 20em 25em;
   gap: 20px;
-  padding: 25em;
-  margin: 9em;
 }
 
-.card {
+.plan-card {
   display: baseline;
   background: #18181b;
   padding: 16px;
@@ -118,7 +119,7 @@ body {
   transition: 0.2s;
 }
 
-.card:hover {
+.plan-card:hover {
   background: #27272a;
 }
 
@@ -144,4 +145,20 @@ body {
 
 .btn:hover {
   background: #52525b;
+}
+
+.products{
+  display: grid;
+  padding: 15px;
+  height: 100%;
+  width: 100%;
+  gap: 20px;
+}
+
+.product-card {
+  background: #18181b;
+  padding: 2em;
+  border-radius: 12px;
+  transition: 0.2s;
+  width: 100%;
 }
